@@ -1,0 +1,30 @@
+\usepackage{xcolor}
+\usepackage{textcomp}
+
+% TODO: Add support for digits.
+%\definecolor{digits}{RGB}{0,0,128} % dark blue
+
+\definecolor{comment}{RGB}{0,128,0}     % dark green
+\definecolor{string}{RGB}{255,0,0}      % red
+\definecolor{instruction}{RGB}{0,0,255} % blue
+\definecolor{directive}{RGB}{128,0,128} % purple
+\definecolor{register}{RGB}{128,0,0}    % dark red
+
+\lstdefinestyle{nasm}{
+	commentstyle=\color{comment},
+	stringstyle=\color{string},
+	keywordstyle=\color{instruction},
+	keywordstyle=[2]\color{directive},
+	keywordstyle=[3]\color{register},
+	basicstyle=\footnotesize\ttfamily,
+	numbers=left,
+	numberstyle=\tiny,
+	numbersep=5pt,
+	frame=lines,
+	captionpos=below,
+	breaklines=true,
+	prebreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}},
+	showstringspaces=false,
+	upquote=true,
+	tabsize=8,
+}
