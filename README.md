@@ -3,8 +3,34 @@ latex
 
 Language definitions and styles related to LaTeX.
 
+Usage
+-----
+
+* C
+
+```latex
+\documentclass{article}
+\usepackage{listings}
+\usepackage{c/style}
+\begin{document}
+\lstinputlisting[language=C,style=c]{foo.c}
+\end{document}
+```
+
+* Assembly with NASM syntax
+
+```latex
+\documentclass{article}
+\usepackage{listings}
+\usepackage{nasm/lang}
+\usepackage{nasm/style}
+\begin{document}
+\lstinputlisting[language=nasm,style=nasm]{foo.asm}
+\end{document}
+```
+
 Example
-=======
+-------
 
 Example of C and Assembly listings ([example.tex], [example.pdf]) using the default C language, the custom style [c/style], the custom language [nasm/lang] and the custom style [nasm/style].
 
