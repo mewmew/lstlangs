@@ -1,7 +1,7 @@
 latex
 =====
 
-Language definitions and styles related to LaTeX.
+Language definitions and styles for listings in LaTeX.
 
 Usage
 -----
