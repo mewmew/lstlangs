@@ -433,6 +433,37 @@ dz, equ, extern, far, float, global, long, near, nobnd, org, qword, rel, resb,
 resd, reso, resq, rest, resw, resy, resz, sectalign, section, seg, segment,
 short, strict, times, uppercase, use16, use32, word, wrt
 	},
+	% preprocess.
+	% ref: info nasm | grep -o -e "%[a-z]\+" | sort | uniq
+	alsoletter={\%},
+	morekeywords={
+\%ARG, \%ASSIGN, \%CLEAR, \%COMMENT, \%DEFINE, \%DEFSTR, \%DEFTOK, \%DEPEND,
+\%ELIF, \%ELIFCTX, \%ELIFDEF, \%ELIFEMPTY, \%ELIFENV, \%ELIFID, \%ELIFIDN,
+\%ELIFIDNI, \%ELIFMACRO, \%ELIFN, \%ELIFNCTX, \%ELIFNDEF, \%ELIFNEMPTY,
+\%ELIFNENV, \%ELIFNID, \%ELIFNIDN, \%ELIFNIDNI, \%ELIFNMACRO, \%ELIFNNUM,
+\%ELIFNSTR, \%ELIFNTOKEN, \%ELIFNUM, \%ELIFSTR, \%ELIFTOKEN, \%ELSE,
+\%ENDCOMMENT, \%ENDIF, \%ENDM, \%ENDMACRO, \%ENDREP, \%ENDSTR, \%ERROR,
+\%EXITREP, \%FATAL, \%IASSIGN, \%IDEFINE, \%IDEFSTR, \%IDEFTOK, \%IF, \%IFCTX,
+\%IFDEF, \%IFEMPTY, \%IFENV, \%IFID, \%IFIDN, \%IFIDNI, \%IFMACRO, \%IFN,
+\%IFNCTX, \%IFNDEF, \%IFNEMPTY, \%IFNENV, \%IFNID, \%IFNIDN, \%IFNIDNI,
+\%IFNMACRO, \%IFNNUM, \%IFNSTR, \%IFNTOKEN, \%IFNUM, \%IFSTR, \%IFTOKEN,
+\%IMACRO, \%INCLUDE, \%IXDEFINE, \%LABEL, \%LINE, \%LOCAL, \%MACRO,
+\%PATHSEARCH, \%POP, \%PUSH, \%REP, \%REPL, \%ROTATE, \%SKIP, \%STACKSIZE,
+\%STRCAT, \%STRLEN, \%SUBSTR, \%UNDEF, \%UNMACRO, \%USE, \%WARNING, \%XDEFINE,
+\%arg, \%assign, \%clear, \%comment, \%define, \%defstr, \%deftok, \%depend,
+\%elif, \%elifctx, \%elifdef, \%elifempty, \%elifenv, \%elifid, \%elifidn,
+\%elifidni, \%elifmacro, \%elifn, \%elifnctx, \%elifndef, \%elifnempty,
+\%elifnenv, \%elifnid, \%elifnidn, \%elifnidni, \%elifnmacro, \%elifnnum,
+\%elifnstr, \%elifntoken, \%elifnum, \%elifstr, \%eliftoken, \%else,
+\%endcomment, \%endif, \%endm, \%endmacro, \%endrep, \%endstr, \%error,
+\%exitrep, \%fatal, \%iassign, \%idefine, \%idefstr, \%ideftok, \%if, \%ifctx,
+\%ifdef, \%ifempty, \%ifenv, \%ifid, \%ifidn, \%ifidni, \%ifmacro, \%ifn,
+\%ifnctx, \%ifndef, \%ifnempty, \%ifnenv, \%ifnid, \%ifnidn, \%ifnidni,
+\%ifnmacro, \%ifnnum, \%ifnstr, \%ifntoken, \%ifnum, \%ifstr, \%iftoken,
+\%imacro, \%include, \%ixdefine, \%label, \%line, \%local, \%macro,
+\%pathsearch, \%pop, \%push, \%rep, \%repl, \%rotate, \%skip, \%stacksize,
+\%strcat, \%strlen, \%substr, \%undef, \%unmacro, \%use, \%warning, \%xdefine
+	},
 	% registers.
 	% ref: http://www.nasm.us/doc/nasmdo11.html#section-11.1
 	classoffset=2,
