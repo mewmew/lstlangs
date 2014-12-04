@@ -1,6 +1,6 @@
-all: example.pdf
+all: example
 
-example.pdf:
+example:
 	texi2pdf -I ../ -q -c example.tex
 
 clean:

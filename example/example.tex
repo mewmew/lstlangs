@@ -7,20 +7,28 @@
 \usepackage[margin=1in]{geometry}
 \usepackage[parfill]{parskip}
 \usepackage{listings}
-\usepackage{c/style}
 \usepackage{nasm/lang}
 \usepackage{nasm/style}
+\usepackage{c/style}
+\usepackage{go/lang}
+\usepackage{go/style}
 
 % Document
 
 \begin{document}
 
+\section{Assembly Listing with NASM Syntax}
+
+\lstinputlisting[language=nasm,style=nasm,caption={Assembly listing with NASM syntax using the custom language \texttt{nasm/lang} and the custom style \texttt{nasm/style}.}]{hello.asm}
+
 \section{C Listing}
 
 \lstinputlisting[language=C,style=c,caption={C listing using the default C language and the custom style \texttt{c/style}.}]{hello.c}
 
-\section{Assembly Listing with NASM Syntax}
+\pagebreak
 
-\lstinputlisting[language=nasm,style=nasm,caption={Assembly listing with NASM syntax using the custom language \texttt{nasm/lang} and the custom style \texttt{nasm/style}.}]{hello.asm}
+\section{Go Listing}
+
+\lstinputlisting[language=go,style=go,caption={Go listing using the custom language \texttt{go/lang} and the custom style \texttt{go/style}.}]{fib.go}
 
 \end{document}
