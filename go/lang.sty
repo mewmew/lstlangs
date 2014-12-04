@@ -1,0 +1,37 @@
+% Based on https://bitbucket.org/korfuri/golang-latex-listings by Uriel Corfa.
+
+\lstdefinelanguage{go}{
+	sensitive=true,
+	alsoletter={\%},
+	% comments.
+	%    // line comment
+	%    /* general comment */
+	comment=[l]{//},
+	morecomment=[s]{/*}{*/},
+	% strings.
+	%    "foo"
+	%    `bar`
+	%    'x'
+	string=[b]{"},
+	morestring=[b]{`},
+	morestring=[b]{'},
+	% keywords.
+	%    ref: http://golang.org/ref/spec#Keywords
+	keywords=[1]{
+break, case, chan, const, continue, default, defer, else, fallthrough, for,
+func, go, goto, if, import, interface, map, package, range, return, select,
+struct, switch, type, var
+	},
+	% built-in functions.
+	%    ref: http://golang.org/ref/spec#Predeclared_identifiers
+	morekeywords=[2]{
+append, cap, close, complex, copy, delete, imag, len, make, new, panic, print,
+println, real, recover
+	},
+	% basic types.
+	%    ref: http://golang.org/ref/spec#Predeclared_identifiers
+	morekeywords=[3]{
+bool, byte, complex64, complex128, error, float32, float64, int, int8, int16,
+int32, int64, rune, string, uint, uint8, uint16, uint32, uint64, uintptr
+	},
+}
