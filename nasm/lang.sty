@@ -1,12 +1,17 @@
 \lstdefinelanguage{nasm}{
-	comment=[l]{;},
-	string=[b]",
-	morestring=[b]',
 	sensitive=true,
+	alsoletter={\%},
+	% comments.
+	%    ; line comment
+	comment=[l]{;},
+	% strings.
+	%    "foo"
+	%    'bar'
+	string=[b]{"},
+	morestring=[b]{'},
 	% instructions.
-	% ref: http://www.nasm.us/doc/nasmdocb.html
-	classoffset=0,
-	keywords={
+	%    ref: http://www.nasm.us/doc/nasmdocb.html
+	keywords=[1]{
 AAA, AAD, AAM, AAS, ADC, ADCX, ADD, ADDPD, ADDPS, ADDSD, ADDSS, ADDSUBPD,
 ADDSUBPS, ADOX, AESDEC, AESDECLAST, AESENC, AESENCLAST, AESIMC, AESKEYGENASSIST,
 AND, ANDN, ANDNPD, ANDNPS, ANDPD, ANDPS, ARPL, BEXTR, BLCFILL, BLCI, BLCIC,
@@ -421,9 +426,8 @@ xrstor64, xrstors, xrstors64, xsave, xsave64, xsavec, xsavec64, xsaveopt,
 xsaveopt64, xsaves, xsaves64, xsetbv, xsha1, xsha256, xstore, xtest
 	},
 	% directives.
-	% ref: http://www.nasm.us/doc/nasmdoc6.html
-	classoffset=1,
-	keywords={
+	%    ref: http://www.nasm.us/doc/nasmdoc6.html
+	keywords=[2]{
 ABS, ABSOLUTE, BITS, BND, BYTE, COMMON, CPU, DB, DD, DO, DQ, DT, DW, DWORD, DY,
 DZ, EQU, EXTERN, FAR, FLOAT, GLOBAL, LONG, NEAR, NOBND, ORG, QWORD, REL, RESB,
 RESD, RESO, RESQ, REST, RESW, RESY, RESZ, SECTALIGN, SECTION, SEG, SEGMENT,
@@ -434,9 +438,8 @@ resd, reso, resq, rest, resw, resy, resz, sectalign, section, seg, segment,
 short, strict, times, uppercase, use16, use32, word, wrt
 	},
 	% preprocess.
-	% ref: info nasm | grep -o -e "%[a-z]\+" | sort | uniq
-	alsoletter={\%},
-	morekeywords={
+	%    ref: info nasm | grep -o -e "%[a-z]\+" | sort | uniq
+	morekeywords=[2]{
 \%ARG, \%ASSIGN, \%CLEAR, \%COMMENT, \%DEFINE, \%DEFSTR, \%DEFTOK, \%DEPEND,
 \%ELIF, \%ELIFCTX, \%ELIFDEF, \%ELIFEMPTY, \%ELIFENV, \%ELIFID, \%ELIFIDN,
 \%ELIFIDNI, \%ELIFMACRO, \%ELIFN, \%ELIFNCTX, \%ELIFNDEF, \%ELIFNEMPTY,
@@ -465,14 +468,13 @@ short, strict, times, uppercase, use16, use32, word, wrt
 \%strcat, \%strlen, \%substr, \%undef, \%unmacro, \%use, \%warning, \%xdefine
 	},
 	% macros.
-	morekeywords={
-endstruc, iend, istruc, struc,
+	morekeywords=[2]{
 ENDSTRUC, IEND, ISTRUC, STRUC,
+endstruc, iend, istruc, struc,
 	},
 	% registers.
-	% ref: http://www.nasm.us/doc/nasmdo11.html#section-11.1
-	classoffset=2,
-	keywords={
+	%    ref: http://www.nasm.us/doc/nasmdo11.html#section-11.1
+	keywords=[3]{
 AH, AL, AX, BH, BL, BP, BPL, BX, CH, CL, CX, DH, DI, DIL, DL, DX, EAX, EBP, EBX,
 ECX, EDI, EDX, ESI, ESP, R10, R10B, R10D, R10W, R11, R11B, R11D, R11W, R12,
 R12B, R12D, R12W, R13, R13B, R13D, R13W, R14, R14B, R14D, R14W, R15, R15B, R15D,
@@ -484,5 +486,4 @@ r12b, r12d, r12w, r13, r13b, r13d, r13w, r14, r14b, r14d, r14w, r15, r15b, r15d,
 r15w, r8, r8b, r8d, r8w, r9, r9b, r9d, r9w, rax, rbp, rbx, rcx, rdi, rdx, rsi,
 rsp, si, sil, sp, spl
 	},
-	classoffset=0,
 }
