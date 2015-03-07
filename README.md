@@ -1,10 +1,8 @@
-latex
-=====
+# latex
 
 Language definitions and styles for listings in LaTeX.
 
-Usage
------
+## Usage
 
 * C
 
@@ -44,8 +42,7 @@ Usage
 \end{document}
 ```
 
-Example
--------
+## Example
 
 Example of C, Go and assembly listings ([example.tex], [example.pdf]) using the default language with a [custom style][c/style] for C, a [custom language][go/lang] with a [custom style][go/style] for Go, and a [custom language][nasm/lang] with a [custom style][nasm/style] for NASM assembly.
 
@@ -61,8 +58,7 @@ Example of C, Go and assembly listings ([example.tex], [example.pdf]) using the 
 
 ![Fibonacci listings](https://raw.github.com/mewpaper/latex/master/example/fib.png)
 
-public domain
--------------
+## Public domain
 
 The source code and any original content of this repository is hereby released into the [public domain].
 
