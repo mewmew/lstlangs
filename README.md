@@ -42,9 +42,22 @@ Language definitions and styles for listings in LaTeX.
 \end{document}
 ```
 
+* The [REIL](http://www.zynamics.com/binnavi/manual/html/reil_language.htm) instructions
+
+```latex
+\documentclass{article}
+\usepackage{listings}
+\usepackage{reil/lang}  % include custom language for the REIL instruction set.
+\usepackage{nasm/style} % include custom style for NASM assembly.
+\begin{document}
+% Use custom language and style (NASM) for the REIL instruction set.
+\lstinputlisting[language=reil,style=nasm]{foo.reil}
+\end{document}
+```
+
 ## Example
 
-Example of C, Go and assembly listings ([example.tex], [example.pdf]) using the default language with a [custom style][c/style] for C, a [custom language][go/lang] with a [custom style][go/style] for Go, and a [custom language][nasm/lang] with a [custom style][nasm/style] for NASM assembly.
+Example of C, Go, assembly and REIL listings ([example.tex], [example.pdf]) using the default language with a [custom style][c/style] for C, a [custom language][go/lang] with a [custom style][go/style] for Go, a [custom language][nasm/lang] with a [custom style][nasm/style] for NASM assembly, and a [custom language][reil/lang] with a [custom style][nasm/style] for REIL instructions.
 
 [example.tex]: example/example.tex
 [example.pdf]: https://raw.github.com/mewpaper/latex/master/example/example.pdf
@@ -53,10 +66,13 @@ Example of C, Go and assembly listings ([example.tex], [example.pdf]) using the 
 [go/style]: go/style.sty
 [nasm/lang]: nasm/lang.sty
 [nasm/style]: nasm/style.sty
+[reil/lang]: reil/lang.sty
 
 ![Example listings](https://raw.github.com/mewpaper/latex/master/example/example.png)
 
 ![Fibonacci listings](https://raw.github.com/mewpaper/latex/master/example/fib.png)
+
+![REIL listings](https://raw.github.com/mewpaper/latex/master/example/reil.png)
 
 ## Public domain
 

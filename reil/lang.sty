@@ -1,0 +1,26 @@
+\lstdefinelanguage{reil}{
+	sensitive=true,
+	% comments.
+	%    ; line comment
+	comment=[l]{;},
+	% instructions.
+	%    ref: http://www.zynamics.com/binnavi/manual/html/reil_language.htm
+	keywords=[1]{
+ADD, SUB, MUL, DIV, MOD, BSH, AND, OR, XOR, LDM, STM, STR, BISZ, JCC, UNDEF, UNKN, NOP,
+add, sub, mul, div, mod, bsh, and, or, xor, ldm, stm, str, bisz, jcc, undef, unkn, nop
+	},
+	% registers.
+	%    ref: http://www.nasm.us/doc/nasmdo11.html#section-11.1
+	keywords=[3]{
+AH, AL, AX, BH, BL, BP, BPL, BX, CH, CL, CX, DH, DI, DIL, DL, DX, EAX, EBP, EBX,
+ECX, EDI, EDX, ESI, ESP, R10, R10B, R10D, R10W, R11, R11B, R11D, R11W, R12,
+R12B, R12D, R12W, R13, R13B, R13D, R13W, R14, R14B, R14D, R14W, R15, R15B, R15D,
+R15W, R8, R8B, R8D, R8W, R9, R9B, R9D, R9W, RAX, RBP, RBX, RCX, RDI, RDX, RSI,
+RSP, SI, SIL, SP, SPL,
+ah, al, ax, bh, bl, bp, bpl, bx, ch, cl, cx, dh, di, dil, dl, dx, eax, ebp, ebx,
+ecx, edi, edx, esi, esp, r10, r10b, r10d, r10w, r11, r11b, r11d, r11w, r12,
+r12b, r12d, r12w, r13, r13b, r13d, r13w, r14, r14b, r14d, r14w, r15, r15b, r15d,
+r15w, r8, r8b, r8d, r8w, r9, r9b, r9d, r9w, rax, rbp, rbx, rcx, rdi, rdx, rsi,
+rsp, si, sil, sp, spl
+	},
+}
