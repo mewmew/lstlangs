@@ -1,0 +1,55 @@
+\lstdefinelanguage{llvm}{
+	sensitive=true,
+	alsoletter={\%},
+	% comments.
+	%    ; line comment
+	comment=[l]{;},
+	% strings.
+	%    "foo"
+	string=[b]{"},
+	% instructions.
+	%    ref: http://llvm.org/docs/LangRef.html#instruction-reference
+	keywords=[1]{
+add, addrspacecast, alloca, and, ashr, atomicrmw, bitcast, br, call, cmpxchg,
+extractelement, extractvalue, fadd, fcmp, fdiv, fence, fmul, fpext, fptosi,
+fptoui, fptrunc, frem, fsub, getelementptr, icmp, indirectbr, insertelement,
+insertvalue, inttoptr, invoke, landingpad, load, lshr, mul, or, phi, ptrtoint,
+resume, ret, sdiv, select, sext, shl, shufflevector, sitofp, srem, store, sub,
+switch, to, trunc, udiv, uitofp, unreachable, urem, va_arg, xor, zext
+	},
+	% directives.
+	%    ref: http://llvm.org/docs/LangRef.html
+	keywords=[2]{
+acq_rel, acquire, addrspace, alias, align, alignstack, alwaysinline, any,
+anyregcc, appending, arcp, arm_aapcs_vfpcc, arm_aapcscc, arm_apcscc, asm,
+atomic, attributes, available_externally, blockaddress, builtin, byval, c,
+catch, cc, ccc, cleanup, cold, coldcc, comdat, common, constant, datalayout,
+declare, default, define, dereferenceable, dllexport, dllimport, eq, exact,
+exactmatch, extern_weak, external, externally_initialized, false, fast, fastcc,
+filter, gc, ghccc, global, hidden, inalloca, inbounds, initialexec, inlinehint,
+inreg, intel_ocl_bicc, inteldialect, internal, jumptable, largest, linkonce,
+linkonce_odr, localdynamic, localexec, max, min, minsize, module, monotonic,
+msp430_intrcc, musttail, naked, nand, ne, nest, ninf, nnan, noalias, nobuiltin,
+nocapture, noduplicate, noduplicates, noimplicitfloat, noinline, nonlazybind,
+nonnull, noredzone, noreturn, nounwind, nsw, nsz, null, nuw, oeq, oge, ogt, ole,
+olt, one, opaque, optnone, optsize, ord, personality, prefix, preserve_allcc,
+preserve_mostcc, private, prologue, protected, ptx_device, ptx_kernel, readnone,
+readonly, release, returned, returns_twice, samesize, sanitize_address,
+sanitize_memory, sanitize_thread, section, seq_cst, sge, sgt, sideeffect,
+signext, singlethread, sle, slt, spir_func, spir_kernel, sret, ssp, sspreq,
+sspstrong, tail, target, thread_local, triple, true, type, ueq, uge, ugt, ule,
+ult, umax, umin, undef, une, unnamed_addr, uno, unordered, unwind, uselistorder,
+uselistorder_bb, uwtable, volatile, weak, weak_odr, webkit_jscc, x,
+x86_64_sysvcc, x86_64_win64cc, x86_fastcallcc, x86_stdcallcc, x86_thiscallcc,
+x86_vectorcallcc, xchg, zeroext, zeroinitializer
+	},
+	% types.
+	%    ref: http://llvm.org/docs/LangRef.html#type-system
+	keywords=[3]{
+i1, i2, i3, i4, i5, i6, i7, i8, i9, i10, i11, i12, i13, i14, i15, i16, i17, i18,
+i19, i20, i21, i22, i23, i24, i25, i26, i27, i28, i29, i30, i31, i32, i33, i34,
+i35, i36, i37, i38, i39, i40, i41, i42, i43, i44, i45, i46, i47, i48, i49, i50,
+i51, i52, i53, i54, i55, i56, i57, i58, i59, i60, i61, i62, i63, i64, void,
+half, float, double, fp128, x86_fp80, ppc_fp128, x86_mmx, label, metadata
+	},
+}

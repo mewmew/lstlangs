@@ -13,6 +13,7 @@
 \usepackage{go/lang}
 \usepackage{go/style}
 \usepackage{reil/lang}
+\usepackage{llvm/lang}
 
 % Document
 
@@ -21,6 +22,8 @@
 \section{Assembly Listing with NASM Syntax}
 
 \lstinputlisting[language=nasm,style=nasm,caption={Assembly listing with NASM syntax using the custom language \texttt{nasm/lang} and the custom style \texttt{nasm/style}.}]{hello.asm}
+
+\pagebreak
 
 \section{C Listing}
 
@@ -32,8 +35,16 @@
 
 \lstinputlisting[language=go,style=go,caption={Go listing using the custom language \texttt{go/lang} and the custom style \texttt{go/style}.}]{fib.go}
 
+\pagebreak
+
 \section{REIL Instructions Listing}
 
 \lstinputlisting[language=reil,style=nasm,caption={REIL instructions listing using the custom language \texttt{reil/lang} and the custom style \texttt{nasm/style}.}]{foo.reil}
+
+\pagebreak
+
+\section{LLVM IR Listing}
+
+\lstinputlisting[language=llvm,style=nasm,caption={LLVM IR listing using the custom language \texttt{llvm/lang} and the custom style \texttt{nasm/style}.}]{hello.ll}
 
 \end{document}
