@@ -73,7 +73,7 @@ Language definitions and styles for listings in LaTeX.
 Example of C, Go, assembly, REIL and LLVM IR listings ([example.tex], [example.pdf]) using the default language with a [custom style][c/style] for C, a [custom language][go/lang] with a [custom style][go/style] for Go, a [custom language][nasm/lang] with a [custom style][nasm/style] for NASM assembly, a [custom language][reil/lang] with a [custom style][nasm/style] for REIL instructions, and a [custom language][llvm/lang] with a [custom style][nasm/style] for LLVM IR.
 
 [example.tex]: example/example.tex
-[example.pdf]: https://rawgit.com/mewpaper/latex/master/example/example.pdf
+[example.pdf]: https://raw.githubusercontent.com/mewpaper/latex/master/example/example.pdf
 [c/style]: c/style.sty
 [go/lang]: go/lang.sty
 [go/style]: go/style.sty
