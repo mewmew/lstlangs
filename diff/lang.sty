@@ -1,0 +1,21 @@
+% Based on http://tex.stackexchange.com/a/50263 by alexis.
+
+% TODO: Specify colors in style.sty rather than lang.sty.
+
+\usepackage{xcolor}
+\usepackage{textcomp}
+
+\definecolor{cmd}{HTML}{0086B3}    % blue:   diff
+\definecolor{group}{HTML}{795DA3}  % purple: @@@
+\definecolor{del}{HTML}{BD2C00}    % red:    -
+\definecolor{add}{HTML}{55A532}    % green:  +
+
+\lstdefinelanguage{diff}{
+	sensitive=true,
+	comment=[f][\color{cmd}]{diff},         % command
+	morecomment=[s][\color{group}]{@@}{@@}, % group identifier
+	morecomment=[f][\color{del}]{-},        % deleted lines
+	morecomment=[f][\color{add}]{+},        % added lines
+	morecomment=[f][\color{del}]{---},      % Diff header lines (must appear after +,-)
+	morecomment=[f][\color{add}]{+++},
+}

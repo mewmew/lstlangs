@@ -14,6 +14,8 @@
 \usepackage{go/style}
 \usepackage{reil/lang}
 \usepackage{llvm/lang}
+\usepackage{diff/lang}
+\usepackage{diff/style}
 
 % Document
 
@@ -46,5 +48,11 @@
 \section{LLVM IR Listing}
 
 \lstinputlisting[language=llvm,style=nasm,caption={LLVM IR listing using the custom language \texttt{llvm/lang} and the custom style \texttt{nasm/style}.}]{hello.ll}
+
+\pagebreak
+
+\section{Diff Listing}
+
+\lstinputlisting[language=diff,style=diff,caption={Diff listing using the custom language \texttt{diff/lang} and the custom style \texttt{diff/style}.}]{unnamed.patch}
 
 \end{document}
