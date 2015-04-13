@@ -1,0 +1,27 @@
+\usepackage{xcolor}
+\usepackage{textcomp}
+
+% TODO: Add support for digits.
+%\definecolor{digits}{RGB}{0,0,128} % dark blue
+
+\definecolor{comment}{RGB}{0,128,0}    % dark green
+\definecolor{string}{RGB}{255,0,0}     % red
+\definecolor{attribute}{RGB}{0,0,255}    % blue
+\definecolor{type}{RGB}{128,0,0}       % dark red
+
+\lstdefinestyle{dot}{
+	commentstyle=\color{comment},
+	stringstyle=\color{string},
+	keywordstyle=[1]\color{attribute},
+	keywordstyle=[2]\color{type},
+	basicstyle=\footnotesize\ttfamily,
+	numbers=left,
+	numberstyle=\tiny,
+	numbersep=5pt,
+	frame=lines,
+	breaklines=true,
+	prebreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}},
+	showstringspaces=false,
+	upquote=true,
+	tabsize=3,
+}

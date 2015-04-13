@@ -1,0 +1,30 @@
+\lstdefinelanguage{dot}{
+	sensitive=true,
+	% comments.
+	%    // line comment
+	%    /* general comment */
+	comment=[l]{//},
+	morecomment=[s]{/*}{*/},
+	% strings.
+	%    "foo"
+	%    `bar`
+	%    'x'
+	string=[b]{"},
+	% attributes.
+	keywords=[1]{
+arrowhead, arrowsize, arrowtail, bgcolor, bottomlabel, center, clusterrank,
+color, comment, compound, concentrate, constraint, decorate, dir, distortion,
+fillcolor, fixedsize, fontcolor, fontname, fontpath, fontsize, group, headlabel,
+headport, headURL, height, label, labelangle, labelcolor, labeldistance,
+labelfloat, labelfontname, labelfontsize, labeljust, labelloc, layer, layers,
+lhead, ltail, margin, mclimit, minlen, nodesep, nslimit, nslimit1, ordering,
+orientation, page, pagedir, peripheries, quantum, rank, rankdir, ranksep, ratio,
+regular, remincross, rotate, samehead, sametail, samplepoints, searchsize,
+shape, shapefile, sides, size, skew, style, taillabel, tailport, tailURL,
+toplabel, URL, weight, width, z
+	},
+	% types.
+	morekeywords=[2]{
+node, edge, graph, digraph, subgraph, strict
+	},
+}

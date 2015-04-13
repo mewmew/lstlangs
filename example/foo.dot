@@ -1,0 +1,8 @@
+digraph if {
+	A->B [label="true"];
+	A->C [label="false"];
+	B->C
+	A [label="entry"]
+	B
+	C [label="exit"];
+}
