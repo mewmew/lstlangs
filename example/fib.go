@@ -1,3 +1,5 @@
+//+build ignore
+
 // fib is a command which prints the Fibonacci sequence.
 package main
 
