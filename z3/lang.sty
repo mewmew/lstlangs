@@ -1,0 +1,23 @@
+\lstdefinelanguage{z3}{
+	sensitive=true,
+	alsoletter={\-},
+	% comments.
+	%    ; line comment
+	comment=[l]{;},
+	% Z3 keywords.
+	keywords=[1]{
+apply, assert, assert-soft, check-sat, check-sat-using, compute-interpolant,
+declare-const, declare-datatypes, declare-fun, declare-map, declare-rel,
+declare-sort, declare-tactic, define-sort, display, echo, eval, exit,
+fixedpoint-pop, fixedpoint-push, get-assertions, get-assignment, get-info, get-
+interpolant, get-model, get-option, get-proof, get-unsat-core, get-user-tactics,
+get-value, help, help-tactic, labels, maximize, minimize, pop, push, query,
+reset, rule, set-info, set-logic, set-option, simplify
+	},
+	% Z3 built-ins
+	morekeywords=[2]{
+check-sat-using, declare-var, declare-rel, rule, query, set-predicate-
+representation, maximize, minimize, assert-soft, assert-weighted, compute-
+interpolant
+	},
+}
