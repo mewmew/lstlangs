@@ -89,9 +89,3 @@ Example of C, Go, assembly, REIL and LLVM IR listings ([example.tex], [example.p
 ![REIL listings](https://raw.githubusercontent.com/mewpaper/latex/master/example/reil.png)
 
 ![LLVM IR listings](https://raw.githubusercontent.com/mewpaper/latex/master/example/llvm.png)
-
-## Public domain
-
-The source code and any original content of this repository is hereby released into the [public domain].
-
-[public domain]: https://creativecommons.org/publicdomain/zero/1.0/
