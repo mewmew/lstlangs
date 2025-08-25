@@ -2,6 +2,12 @@
 
 Language definitions and styles for listings in LaTeX.
 
+## Installation
+
+```bash
+git clone https://github.com/mewmew/lstlangs ~/texmf/tex/latex/lstlangs
+```
+
 ## Usage
 
 * C
